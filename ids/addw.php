@@ -9,8 +9,7 @@ ob_implicit_flush(1);
 #####################################
 $api = "apikeyhere";
 $url = "http://nagiosserver.com/";
-$applylink = 0;
-$autoapply = 0;
+$autoapply = 0; # automatic apply when done
 #####################################
 # Grab variables that were passed
 $hostname=$_POST['hostname'];
@@ -198,9 +197,14 @@ foreach ($result as $temp){
     }
 }
 echo "<font color=green><b>OK</b></font>"."<br>";
-#Apply changes
-# $command = $url . "nagiosxi/api/v1/system/applyconfig?apikey=" . $api . "&pretty=1";
-#`curl -XGET "$command"`;
+# Auto Apply changes
+if ($autoapply == 1) {
+	$command = $url . "nagiosxi/api/v1/system/applyconfig?apikey=" . $api . "&pretty=1";
+	$apply = `curl -XGET "$command"`;
+	echo "Everything worked and changes applied...";
+	ob_end_flush();
+	exit;
+}
 echo "Everything worked, informing SD and Nagios team...";
 $msg = "Please open a low priority task for monitoring team: $hostname has been added to NagiosXI";
 ob_end_flush();
@@ -214,7 +218,3 @@ FUNCTION emailcms(&$message){
     exit;
 }
 ?>
-<!-- <br><br>
-<table>
-        <tr><a href="ac.php">Apply Changes</a></tr>
-</table> -->
