@@ -1,7 +1,7 @@
 {
   "name": "NagiosXI - Component - IDS",
   "tagline": "NagiosXI component to deploy new hosts using rest api",
-  "body": "# ids\r\nNagiosXI component to deploy new hosts using rest api\r\n\r\n# Important Notes\r\n1.) \r\n\r\n# Configuration\r\n1.) Open ids.php and modify the href to point to internal documentation(we used a google drive link)<br>\r\n2.) Open ac.php, addw.php and addl.php and set \"User Defined Variables\" near top of each file\r\n\r\n# Installation\r\n1.) Download as zip<br>\r\n2.) Rename zip to component-ids.zip<br>\r\n3.) Install as you would any other component\r\n",
+  "body": "# ids\r\nNagiosXI component to deploy new hosts using rest api\r\n\r\n### Important Notes\r\n1.) <b>This is not ready to pull yet(2016/03/16)</b><br>\r\n\r\n### Configuration\r\n1.) Open ids.php and modify the href to point to internal documentation(we used a google drive link)<br>\r\n2.) Open ac.php, addw.php and addl.php and set \"User Defined Variables\" near top of each file\r\n\r\n### Installation\r\n1.) Download as zip<br>\r\n2.) Rename zip to component-ids.zip<br>\r\n3.) Install as you would any other component\r\n",
   "google": "",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
