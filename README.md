@@ -9,4 +9,6 @@ NagiosXI component to deploy new hosts using rest api
 2.) Open ac.php, addw.php and addl.php and set "User Defined Variables" near top of each file
 
 # Installation
-1.) 
+1.) Download as zip<br>
+2.) Rename zip to component-ids.zip<br>
+3.) Install as you would any other component
