@@ -2,7 +2,7 @@
 NagiosXI component to deploy new hosts using rest api
 
 ### Important Notes
-1.) <b>This can be downloaded at will now, I will add notes as ASAP to explain a few items!</b><br>
+1.) <b>This can be downloaded at will now, I will add notes ASAP to explain a few items!</b><br>
 
 ### Configuration
 1.) Open ids.php and modify the href to point to internal documentation(we used a google drive link)<br>
